@@ -1,7 +1,6 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,7 +9,7 @@ namespace S4.BlazorTest.BlzWebApp
     public class Program
     {
         public static async Task Main(string[] args)
-        {
+        {     
             WebAssemblyHostBuilder builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
 
@@ -19,4 +18,4 @@ namespace S4.BlazorTest.BlzWebApp
             await builder.Build().RunAsync();
         }
     }
-}
+} 
